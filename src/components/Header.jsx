@@ -1,7 +1,10 @@
+import globe from "../images/globe.png";
+
 export default function Header() {
   return (
     <header>
-      <h1>My React App</h1>
+      <img src={globe} alt="Globe logo" />
+      <h1>my travel journal.</h1>
     </header>
   );
 }
