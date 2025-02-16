@@ -1,11 +1,16 @@
 import Entry from "./components/Entry";
 import Header from "./components/Header";
+import data from "./assets/data";
 
 function App() {
+  const travelData = data.map((data) => {
+    return <Entry key={data.id} obj={data} />;
+  });
+
   return (
     <>
       <Header />
-      <Entry />
+      <div className="container">{travelData}</div>
     </>
   );
 }
